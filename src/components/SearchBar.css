@@ -1,0 +1,38 @@
+
+.search-bar {
+    width: 100%;
+    max-width: 400px;
+    margin-left: 510px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #e50914;
+    border-radius: 25px;
+    background-color: #f1f1f1;
+
+
+    background-image: url('https://img.icons8.com/?size=100&id=DPwOpoSmmchO&format=png&color=000000');
+
+    background-position: right 15px center;
+    background-repeat: no-repeat;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease-in-out;
+  }
+
+
+  .search-bar:hover {
+    background-color: #ffebcd;
+    border-color: #d32f2f;
+  }
+
+
+  .search-bar::placeholder {
+    color: #b71c1c;
+    font-style: italic;
+    font-family: 'Cursive', sans-serif;
+  }
+
+  .search-bar:focus {
+    outline: none;
+    border-color: #ff9800;
+    background-color: #fff8e1;
+  }

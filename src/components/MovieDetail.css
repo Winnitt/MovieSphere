@@ -1,0 +1,85 @@
+.movie-detail {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    padding: 20px;
+    background: linear-gradient(135deg, #1c1c1c, #333);
+    border: 2px solid #e50914; /* Netflix red */
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+    color: #fff;
+    font-family: 'Roboto', Arial, sans-serif;
+    text-align: center;
+    z-index: 1000;
+    animation: fadeIn 0.4s ease-out;
+  }
+
+  .movie-detail img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border: 2px solid #e50914;
+  }
+
+  .close-btn {
+    background: none;
+    border: none;
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+
+  .close-btn:hover {
+    color: #e50914;
+  }
+
+  .movie-detail h2 {
+    font-family: 'Bebas Neue', Arial, sans-serif;
+    font-size: 2rem;
+    margin: 10px 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  }
+
+  .movie-detail p {
+    font-size: 1rem;
+    margin: 5px 0;
+  }
+
+  .movie-detail a {
+    color: #61dafb;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+
+  .movie-detail a:hover {
+    color: #e50914;
+  }
+
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 999;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translate(-50%, -45%);
+    }
+    to {
+      opacity: 1;
+      transform: translate(-50%, -50%);
+    }
+  }
